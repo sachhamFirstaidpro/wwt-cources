@@ -1,0 +1,124 @@
+.wwtc_courses_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+.wwtc_courses_main .wwtc_courses_field {
+    width: 25%;
+    padding: 0 15px;
+}
+.wwtc_courses_main .wwtc_courses_field select {
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: 0;
+    border: 1px solid #767676;
+    background: #ffffff;
+    box-shadow: unset;
+}
+.wwtc_courses_main .wwtc_courses_field select:disabled{
+    opacity: 0.7;
+    border: 1px solid rgba(118, 118, 118, 0.3);
+}
+body.modal-open {
+    padding-right: 20px !important;
+}
+.book-now-button {
+    background: #116914;
+    background-color: #116914;
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    padding: 11px 25px;
+    border: 1px solid #116914;
+    outline: 0;
+    box-shadow: unset;
+    transition: all 500ms ease-in-out;
+}
+.book-now-button:hover,
+.book-now-button:focus {
+    background: #ffffff;
+    color: #116914;
+    outline: 0;
+    border: 1px solid #116914;
+}
+.modal .modal-content .modal-header {
+    position: relative;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.modal .modal-content .modal-header button.close {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    outline: 0;
+}
+.modal .modal-content .course_booking .wwtc_courses_main .wwtc_courses_field {
+    width: 50%;
+}
+.modal .modal-content .course_booking form {
+    margin-bottom: 0;
+}
+.modal .modal-dialog {
+    max-width: 700px !important;
+}
+
+.modal-backdrop.fade.show {
+    z-index: 1040;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.modal {
+    z-index: 1072;
+}
+#BookNowButtonModal .course_booking .wwtc_courses_main .wwtc_courses_field {
+    width: 33.33%;
+}
+.wwtc_courses_main .wwtc_courses_field button.course-book-now-button {
+    color: #fff;
+    background: #e31937;
+    border: 1px solid #e31937;
+    transition: all 500ms ease-in-out;
+    padding: 0;
+    width: 55%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+}
+.wwtc_courses_main .wwtc_courses_field button.course-book-now-button:hover {
+    background: #972536;
+    border-color: #972536;
+}
+.booking-iframe-main #show_course_iframe { text-align: center; }
+
+@media screen and (max-width:991px) and (min-width:768px){
+    .wwtc_courses_main .wwtc_courses_field button.course-book-now-button {
+        width: 70%;
+    }
+}
+@media screen and (max-width:767px){
+    .wwtc_courses_main .wwtc_courses_field,
+    .modal .modal-content .course_booking .wwtc_courses_main .wwtc_courses_field,
+    #BookNowButtonModal .course_booking .wwtc_courses_main .wwtc_courses_field {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .wwtc_courses_main .wwtc_courses_field button.course-book-now-button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+table.wwtc_course_table select.wwtc_select_course,
+table.wwtc_course_table select.wwtc_select_location,
+table.wwtc_course_table select.wwtc_select_course_page
+{ 
+	width: 200px;
+}
+table.wwtc_course_table .hide_course_tr { display: none; }
+table.wwtc_course_table th, table.wwtc_default_iframe_table th { padding: 15px 10px; }
+table.wwtc_course_table td { width: 200px; }
+table.wwtc_course_table td.course_iframe_td, table.wwtc_course_table .wwtc_select_course_iframe
+{ 
+	width: 350px;
+}
+table.wwtc_course_table .select2-container
+{ 
+	width: 200px !important;
+}
+
+table.wwtc_course_state_table { width: auto; }
+table.wwtc_course_state_table td { width: 250px; }
+table.wwtc_course_state_table td .wwtc_course_state {
+	box-shadow: 0 0 0 transparent;
+	border-radius: 4px;
+	border: 1px solid #7e8993;
+	background-color: #fff;
+	color: #32373c;
+	height: 30px;
+	width: 250px;
+}
+table.wwtc_default_iframe_table td .wwtc_default_course_iframe
+{ 
+	width: 400px;
+}
