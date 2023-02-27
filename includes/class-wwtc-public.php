@@ -176,7 +176,7 @@ class WWTC_Public {
         $course_location_arr = array();
         if( !empty( $wwtc_options ) ){
             foreach($wwtc_options as $wwtc_option){
-                if($wwtc_option['course'] == $course_id && $wwtc_option[$flag]!= '')
+                if( !empty( $wwtc_option['course'] ) && $wwtc_option['course'] == $course_id && $wwtc_option[$flag]!= '')
                 {
                     $course_location_arr[] = $wwtc_option['location'];
                 }
@@ -252,7 +252,7 @@ class WWTC_Public {
         $course_location_arr = array();
         if( !empty( $wwtc_options ) ){
             foreach($wwtc_options as $wwtc_option){
-                if($wwtc_option['course'] == $course_id && $wwtc_option[$flag]!= '')
+                if( !empty( $wwtc_option['course'] ) && $wwtc_option['course'] == $course_id && $wwtc_option[$flag]!= '')
                 {
                     $course_location_arr[] = $wwtc_option['location'];
                 }
@@ -335,7 +335,7 @@ class WWTC_Public {
         $wwtc_options = get_option( 'wwtc_courses_data' );
         if(!empty($wwtc_options)){
             foreach($wwtc_options as $wwtc_option){
-                if($wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_page']!= '')
+                if( !empty( $wwtc_option['course'] ) && $wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_page']!= '')
                 {
                     $course_page = $wwtc_option['course_page'];
                 }
@@ -357,7 +357,7 @@ class WWTC_Public {
         $wwtc_options = get_option( 'wwtc_discount_courses_data' );
         if(!empty($wwtc_options)){
             foreach($wwtc_options as $wwtc_option){
-                if($wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_page']!= '')
+                if( !empty( $wwtc_option['course'] ) && $wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_page']!= '')
                 {
                     $course_page = $wwtc_option['course_page'];
                 }
@@ -378,7 +378,7 @@ class WWTC_Public {
         $wwtc_options = get_option( 'wwtc_courses_data' );
         if(!empty($wwtc_options)){
             foreach($wwtc_options as $wwtc_option){
-                if($wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_iframe']!= '' )
+                if( !empty( $wwtc_option['course'] ) && $wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_iframe']!= '' )
                 {
                     $course_iframe = $wwtc_option['course_iframe'];
                 }
@@ -396,7 +396,7 @@ class WWTC_Public {
         $wwtc_options = get_option( 'wwtc_discount_courses_data' );
             if(!empty($wwtc_options)){
             foreach($wwtc_options as $wwtc_option){
-                if($wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_iframe']!= '' )
+                if( !empty( $wwtc_option['course'] ) && $wwtc_option['course'] == $course_id && $wwtc_option['location'] == $location_id && $wwtc_option['course_iframe']!= '' )
                 {
                     $course_iframe = $wwtc_option['course_iframe'];
                 }
